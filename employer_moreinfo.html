@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+{% load static %}
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>INtern</title>
+    <link rel="stylesheet" href="{% static 'assets/bootstrap/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i,600,600i">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora">
+    <link rel="stylesheet" href="{% static 'assets/fonts/fontawesome-all.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/fonts/ionicons.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/fonts/simple-line-icons.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/fonts/typicons.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/Article-Dual-Column.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css">
+    <link rel="stylesheet" href="{% static 'assets/css/Navigation-Clean.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/Navigation-with-Search.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/Projects-Clean.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/smoothproducts.css' %}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+</head>
+
+
+
+<form method='POST' action="{% url 'employer_moreinfo' %}">
+
+{% csrf_token %}
+
+
+
+<body>
+    <section class="clean-block clean-form dark">
+        <div class="container" style="margin-top: 80px;">
+            <div class="block-heading"></div>
+            <form class="border-white" data-bss-recipient="893b71c9af5111de59f5d72c0e8f7953">
+                <h2 class="text-center text-info" style="filter: grayscale(100%) sepia(100%);">Pick some tags</h2>
+                <p class="text-center">Select one or more tags that accurately describe your company, job title, and computer programs you use at work.&nbsp;To select multiple options, hold down the CTRL key and select.<br></p>
+                <div class="form-group"><label for="name" style="margin-bottom: 0px;"><strong>Company&nbsp;</strong></label>
+                  <input class="form-control" type="text" required=""></div>
+                <div class="form-group"><label for="password" style="margin-bottom: 0px;margin-top: 25px;"><strong>Job Title</strong></label>
+                  <select class="form-control" required="">
+                    <option value="" disabled selected>Choose a title</option>
+                    <option value="12">Accountant</option>
+                    <option value="13">Actuary</option><option value="14">Administrative Assistant</option><option value="">Advertising</option><option value="">Aerospace Engineer</option><option value="">Agricultural Engineer</option><option value="">Agricultural Inspector</option><option value="">Agricultural Scientist</option><option value="">Agricultural Technician</option><option value="">Agricultural Worker</option><option value="">Air Traffic Controller</option><option value="">Aircraft Techincian</option><option value="">Airline and Commercial Pilot</option><option value="">Ambulance Dispatcher</option><option value="">Animal Care and Service Worker</option><option value="">Animal Control Worker</option><option value="">Announcer</option><option value="">Anhropologist</option><option value="">Appraiser of Real Estate</option><option value="">Arbitrator</option><option value="">Archeologist</option><option value="">Architect</option><option value="">Art Director</option><option value="">Astronomer</option><option value="">Athletic Trainer</option><option value="">Atmospheric Scientist</option><option value="">Attorney</option><option value="">Audio and Video Technician</option><option value="">Auditor</option><option value="">Author</option><option value="">Automotive Service Technician</option><option value="">Biochemist and Biophysics</option><option value="">Biological Scientist</option><option value="">Biological Technician</option><option value="">Biomedical Engineer</option><option value="">Broadcast Engineer</option><option value="">Budget Analyst</option><option value="">Building Inspector</option><option value="">Cartographer</option><option value="">Chemical Engineer</option><option value="">Chemical Tehnician</option><option value="">Chemist</option><option value="">Chiropractor</option><option value="">Choreographer</option><option value="">Civil Engineer</option><option value="">Community Health Worker</option><option value="">Compliance Officer</option><option value="">Composer- Music</option><option value="">Computer Engineer</option><option value="">Computer Programmer</option><option value="">Computer Support Specialist</option><option value="">Computer Systems Analyst</option><option value="">Conservation Scientist</option><option value="">Construction Manager</option><option value="">Cosmetologist</option><option value="">Counselor</option><option value="">Court Reporter</option><option value="">Curator</option><option value="">Data Entry Keyer</option><option value="">Dental Assistant</option><option value="">Dental Hygienist</option><option value="">Dentist</option><option value="">Designer</option><option value="">Development Manager</option><option value="">Dietitian</option><option value="">Director</option><option value="">Dispatcher</option><option value="">Doctor</option><option value="">Economist</option><option value="">Editor</option><option value="">Educator</option><option value="">Electrician</option><option value="">Environmental Scientist</option><option value="">Epidemiologist</option><option value="">Farmer</option><option value="">Financial Analyst</option><option value="">Financial Manager</option><option value="">Flight Attendant</option><option value="">Flight Engineer</option><option value="">Food Scientist</option><option value="">Forensic Scientist</option><option value="">Forest and Conservation Worker</option><option value="">Fundraising Manager</option><option value="">Geographer</option><option value="">Geological Engineer</option><option value="">Geoscientist</option><option value="">Graphic Designer</option><option value="">Health and Safety Engineer</option><option value="">Health Technician</option><option value="">Historian</option><option value="">Hotel Manager</option><option value="">Human Resoure Manager</option><option value="">Hydrologist</option><option value="">Industrial Engineer</option><option value="">Informational Clerk</option><option value="">Insurance Sales Agent</option><option value="">Interior Designer</option><option value="">Interpreter</option><option value="">Journalist</option><option value="">Judge</option><option value="">Lawyer</option><option value="">Legal Assistant</option><option value="">Legislator</option><option value="">Librarian</option><option value="">Life Scientist</option><option value="">Logistician</option><option value="">Management Analyst</option><option value="">Manager</option><option value="">Manufacturing Engineer</option><option value="">Marine Biologist</option><option value="">Marine Mechanic</option><option value="">Market Research Analyst</option><option value="">Material Scientist</option><option value="">Mathematician</option><option value="">Medicial Scientist</option><option value="">Mental Health Counselor</option><option value="">Meterologist</option><option value="">Microbiologist</option><option value="">Mortician</option><option value="">Musician</option><option value="">Natural Resource Manager</option><option value="">News Analyst</option><option value="">Nuclear Engineer</option><option value="">Nurse</option><option value="">Nurse Anesthetist</option><option value="">Nutritionist</option><option value="">Occupational Therapist</option><option value="">Optician</option><option value="">Paralegal</option><option value="">Paramedic</option><option value="">Personal Care Aid</option><option value="">Pharmacist</option><option value="">Phlebotomist</option><option value="">Photographer</option><option value="">Physical Scientist</option><option value="">Physical Therapist</option><option value="">Physician</option><option value="">Physicist</option><option value="">Podiatrist</option><option value="">Police and Detective</option><option value="">Political Scientist</option><option value="">Politician</option><option value="">Postmaster</option><option value="">Producer</option><option value="">Prosthetist</option><option value="">Psychiatric Technician</option><option value="">Psychologist</option><option value="">Public Relations Specialist</option><option value="">Radiation Therapist</option><option value="">Real Estate Broker</option><option value="">Recreational Therapist</option><option value="">Rehabilitation Counselor</option><option value="">Religious Worker</option><option value="">Reporter</option><option value="">Respiratory Therapist</option><option value="">Sales and Related Worker</option><option value="">School Counselor</option><option value="">Small Engine Mechanic</option><option value="">Social Worker</option><option value="">Sociologist</option><option value="">Software Developer</option><option value="">Sound Engineer</option><option value="">Special Education Teacher</option><option value="">Speech-Language Pathologist</option><option value="">Statistician</option><option value="">Surgeon</option><option value="">Surveyor</option><option value="">Systems Analyst</option><option value="">Tax Preparer</option><option value="">Teacher</option><option value="">Teller</option><option value="">Tour Guide</option><option value="">Translator</option><option value="">Travel Agent</option><option value="">Ultrasound Technician</option><option value="">Urban and Regional Planner</option><option value="">Veterinarian</option><option value="">Video Editor</option><option value="">Water Treatment Systems Operator</option><option value="">Web Developer</option><option value="">Wildlife Biologist</option><option value="">Wind Turbine Technician</option><option value="">Writer</option><option value="">X-Ray Technologist</option><option value="">Zoologist</option></select></div>
+
+
+
+
+                                    <div
+                                        class="form-group"><label for="Programs used  (choose up to three)" style="margin-bottom: 2px;margin-top: 25px;"><strong>Career
+Programs used  & Skill Level Preferred (choose up to three)</strong></label>
+
+                                        <br />
+
+                                        <select class="mdb-select md-form" searchable="Search here.." name="program 1">
+                                          <option value="" disabled selected>Choose a program</option>
+                                          <option value="">N/A</option>
+                                          <optgroup label="Accounting Software"><option value="">Quickbooks</option>
+                                          </optgroup><optgroup label="Blogging Platforms"><option value="">CSS</option>
+                                            <option value="1">HTML</option><option value="">CMS</option>
+                                            <option value="2">Wordpress</option></optgroup>
+                                            <optgroup label="Collaboration Programs">
+                                              <option value="3">Asana</option>
+                                              <option value="4">Dropbox</option>
+                                              <option value="5">Flowdeck</option>
+                                              <option value="">Skype</option>
+                                              <option value="">Trello</option>
+                                              <option value="">Wimi</option>
+                                              <option value="">Zoom</option>
+                                            </optgroup><optgroup label="Data Science Programs">
+                                              <option value="">Alteryx</option>
+                                              <option value="">Apache</option>
+                                              <option value="">Data management</option>
+                                              <option value="">Data mining</option>
+                                              <option value="">JSON</option>
+                                              <option value="">Machine learning</option>
+                                              <option value="">MySQL</option>
+                                              <option value="">SAS</option>
+                                              <option value="">Statistical Software</option>
+                                            </optgroup><optgroup label="Design and Creative Suites">
+                                              <option value="">Adobe Creative Suite</option>
+                                              <option value="">Illustrator</option>
+                                              <option value="">Dreamweaver</option>
+                                              <option value="">InDesign</option>
+                                              <option value="">Lightroom</option>
+                                              <option value="">Photoshop</option>
+                                              <option value="">Premiere Pro</option>
+                                            </optgroup><optgroup label="Email">
+                                              <option value="">Gmail</option>
+                                              <option value="">Outlook</option>
+                                              <option value="">iMail</option></optgroup>
+                                              <optgroup label="Enterprise Applications">
+                                              <option value="">Business Continuity Planning</option>
+                                              <option value="">Customer Relationship Management</option>
+                                              <option value="">HR management tools</option>
+                                              <option value="">E-commerce systems</option>
+                                              <option value="">Enterprise Resource Planning</option>
+                                              <option value="">Payment processing</option></optgroup>
+                                              <optgroup label="G Suite"><option value="">Google Calendar</option>
+                                                <option value="">Docs</option><option value="">Drive</option>
+                                                <option value="">Forms</option></optgroup>
+                                                <optgroup label="iWork"><option value="">iCloud</option>
+                                                  <option value="">Keynote</option><option value="">Numbers</option>
+                                                  <option value="">Pages</option></optgroup>
+                                                  <optgroup label="Microsoft Office 365">
+                                                    <option value="">Excel</option>
+                                                    <option value="">OneDrive</option>
+                                                    <option value="">OneNote</option>
+                                                    <option value="">PowerPoint</option>
+                                                    <option value="">SharePoint</option>
+                                                    <option value="">Word</option>
+                                                  </optgroup><optgroup label="Maintenance">
+                                                    <option value="">Backup and recovery</option>
+                                                    <option value="">Tech support</option>
+                                                    <option value="">Troubleshooting</option>
+                                                  </optgroup><optgroup label="Networks">
+                                                    <option value="">Cloud management</option>
+                                                    <option value="">Network configuration</option>
+                                                    <option value="">Security systems</option>
+                                                    <option value="">WAN/LAN</option></optgroup>
+                                                    <optgroup label="Operating Systems">
+                                                      <option value="">Linux</option>
+                                                      <option value="">MacOS</option>
+                                                      <option value="">Microsoft Windows</option>
+                                                    </optgroup><optgroup label="Social Media">
+                                                      <option value="">Facebook</option>
+                                                      <option value="">Hootsuite</option>
+                                                      <option value="">Instagram</option>
+                                                      <option value="">LinkedIn</option>
+                                                      <option value="">Pinterest</option>
+                                                      <option value="">Twitter</option>
+                                                      <option value="">YouTube</option></optgroup>
+                                                      <optgroup label="Web Browsers">
+                                                        <option value="">Chrome</option>
+                                                        <option value="">Firefox</option>
+                                                        <option value="">Internet Explorer</option>
+                                                        <option value="">Safari</option>
+                                                      </optgroup><optgroup label="Web Development and Programming">
+                                                        <option value="">Django</option>
+                                                        <option value="">Java</option>
+                                                        <option value="">Javascript</option>
+                                                        <option value="">Ruby on rails</option>
+                                                        <option value="">Swift</option>
+                                                        <option value="">Perl</option>
+                                                        <option value="">PHP</option>
+                                                        <option value="">Python</option>
+                                                        <option value="">XML</option>
+                                                      </optgroup></select>
+
+
+
+                                          <select class="mdb-select md-form" searchable="Search here.." name="Skill Level Preferred">
+                                            <option value="" disabled selected>Choose a level</option>
+                                            <option value="12">Beginner</option>
+                                            <option value="13">Some experience</option>
+                                            <option value="14">Advanced</option></select>
+
+
+                                            <br>
+                                            <select class="mdb-select md-form" searchable="Search here.." name="program 1">
+                                              <option value="" disabled selected>Choose a program</option>
+                                              <option value="">N/A</option>
+                                              <optgroup label="Accounting Software"><option value="">Quickbooks</option>
+                                              </optgroup><optgroup label="Blogging Platforms"><option value="">CSS</option>
+                                                <option value="1">HTML</option><option value="">CMS</option>
+                                                <option value="2">Wordpress</option></optgroup>
+                                                <optgroup label="Collaboration Programs">
+                                                  <option value="3">Asana</option>
+                                                  <option value="4">Dropbox</option>
+                                                  <option value="5">Flowdeck</option>
+                                                  <option value="">Skype</option>
+                                                  <option value="">Trello</option>
+                                                  <option value="">Wimi</option>
+                                                  <option value="">Zoom</option>
+                                                </optgroup><optgroup label="Data Science Programs">
+                                                  <option value="">Alteryx</option>
+                                                  <option value="">Apache</option>
+                                                  <option value="">Data management</option>
+                                                  <option value="">Data mining</option>
+                                                  <option value="">JSON</option>
+                                                  <option value="">Machine learning</option>
+                                                  <option value="">MySQL</option>
+                                                  <option value="">SAS</option>
+                                                  <option value="">Statistical Software</option>
+                                                </optgroup><optgroup label="Design and Creative Suites">
+                                                  <option value="">Adobe Creative Suite</option>
+                                                  <option value="">Illustrator</option>
+                                                  <option value="">Dreamweaver</option>
+                                                  <option value="">InDesign</option>
+                                                  <option value="">Lightroom</option>
+                                                  <option value="">Photoshop</option>
+                                                  <option value="">Premiere Pro</option>
+                                                </optgroup><optgroup label="Email">
+                                                  <option value="">Gmail</option>
+                                                  <option value="">Outlook</option>
+                                                  <option value="">iMail</option></optgroup>
+                                                  <optgroup label="Enterprise Applications">
+                                                  <option value="">Business Continuity Planning</option>
+                                                  <option value="">Customer Relationship Management</option>
+                                                  <option value="">HR management tools</option>
+                                                  <option value="">E-commerce systems</option>
+                                                  <option value="">Enterprise Resource Planning</option>
+                                                  <option value="">Payment processing</option></optgroup>
+                                                  <optgroup label="G Suite"><option value="">Google Calendar</option>
+                                                    <option value="">Docs</option><option value="">Drive</option>
+                                                    <option value="">Forms</option></optgroup>
+                                                    <optgroup label="iWork"><option value="">iCloud</option>
+                                                      <option value="">Keynote</option><option value="">Numbers</option>
+                                                      <option value="">Pages</option></optgroup>
+                                                      <optgroup label="Microsoft Office 365">
+                                                        <option value="">Excel</option>
+                                                        <option value="">OneDrive</option>
+                                                        <option value="">OneNote</option>
+                                                        <option value="">PowerPoint</option>
+                                                        <option value="">SharePoint</option>
+                                                        <option value="">Word</option>
+                                                      </optgroup><optgroup label="Maintenance">
+                                                        <option value="">Backup and recovery</option>
+                                                        <option value="">Tech support</option>
+                                                        <option value="">Troubleshooting</option>
+                                                      </optgroup><optgroup label="Networks">
+                                                        <option value="">Cloud management</option>
+                                                        <option value="">Network configuration</option>
+                                                        <option value="">Security systems</option>
+                                                        <option value="">WAN/LAN</option></optgroup>
+                                                        <optgroup label="Operating Systems">
+                                                          <option value="">Linux</option>
+                                                          <option value="">MacOS</option>
+                                                          <option value="">Microsoft Windows</option>
+                                                        </optgroup><optgroup label="Social Media">
+                                                          <option value="">Facebook</option>
+                                                          <option value="">Hootsuite</option>
+                                                          <option value="">Instagram</option>
+                                                          <option value="">LinkedIn</option>
+                                                          <option value="">Pinterest</option>
+                                                          <option value="">Twitter</option>
+                                                          <option value="">YouTube</option></optgroup>
+                                                          <optgroup label="Web Browsers">
+                                                            <option value="">Chrome</option>
+                                                            <option value="">Firefox</option>
+                                                            <option value="">Internet Explorer</option>
+                                                            <option value="">Safari</option>
+                                                          </optgroup><optgroup label="Web Development and Programming">
+                                                            <option value="">Django</option>
+                                                            <option value="">Java</option>
+                                                            <option value="">Javascript</option>
+                                                            <option value="">Ruby on rails</option>
+                                                            <option value="">Swift</option>
+                                                            <option value="">Perl</option>
+                                                            <option value="">PHP</option>
+                                                            <option value="">Python</option>
+                                                            <option value="">XML</option>
+                                                          </optgroup></select>
+
+
+
+                                              <select class="mdb-select md-form" searchable="Search here.." name="Skill Level Preferred">
+                                                <option value="" disabled selected>Choose a level</option>
+                                                <option value="12">Beginner</option>
+                                                <option value="13">Some experience</option>
+                                                <option value="14">Advanced</option></select>
+
+
+                                          <br />
+
+                                          <select class="mdb-select md-form" searchable="Search here.." name="program 1">
+                                            <option value="" disabled selected>Choose a program</option>
+                                            <option value="">N/A</option>
+                                            <optgroup label="Accounting Software"><option value="">Quickbooks</option>
+                                            </optgroup><optgroup label="Blogging Platforms"><option value="">CSS</option>
+                                              <option value="1">HTML</option><option value="">CMS</option>
+                                              <option value="2">Wordpress</option></optgroup>
+                                              <optgroup label="Collaboration Programs">
+                                                <option value="3">Asana</option>
+                                                <option value="4">Dropbox</option>
+                                                <option value="5">Flowdeck</option>
+                                                <option value="">Skype</option>
+                                                <option value="">Trello</option>
+                                                <option value="">Wimi</option>
+                                                <option value="">Zoom</option>
+                                              </optgroup><optgroup label="Data Science Programs">
+                                                <option value="">Alteryx</option>
+                                                <option value="">Apache</option>
+                                                <option value="">Data management</option>
+                                                <option value="">Data mining</option>
+                                                <option value="">JSON</option>
+                                                <option value="">Machine learning</option>
+                                                <option value="">MySQL</option>
+                                                <option value="">SAS</option>
+                                                <option value="">Statistical Software</option>
+                                              </optgroup><optgroup label="Design and Creative Suites">
+                                                <option value="">Adobe Creative Suite</option>
+                                                <option value="">Illustrator</option>
+                                                <option value="">Dreamweaver</option>
+                                                <option value="">InDesign</option>
+                                                <option value="">Lightroom</option>
+                                                <option value="">Photoshop</option>
+                                                <option value="">Premiere Pro</option>
+                                              </optgroup><optgroup label="Email">
+                                                <option value="">Gmail</option>
+                                                <option value="">Outlook</option>
+                                                <option value="">iMail</option></optgroup>
+                                                <optgroup label="Enterprise Applications">
+                                                <option value="">Business Continuity Planning</option>
+                                                <option value="">Customer Relationship Management</option>
+                                                <option value="">HR management tools</option>
+                                                <option value="">E-commerce systems</option>
+                                                <option value="">Enterprise Resource Planning</option>
+                                                <option value="">Payment processing</option></optgroup>
+                                                <optgroup label="G Suite"><option value="">Google Calendar</option>
+                                                  <option value="">Docs</option><option value="">Drive</option>
+                                                  <option value="">Forms</option></optgroup>
+                                                  <optgroup label="iWork"><option value="">iCloud</option>
+                                                    <option value="">Keynote</option><option value="">Numbers</option>
+                                                    <option value="">Pages</option></optgroup>
+                                                    <optgroup label="Microsoft Office 365">
+                                                      <option value="">Excel</option>
+                                                      <option value="">OneDrive</option>
+                                                      <option value="">OneNote</option>
+                                                      <option value="">PowerPoint</option>
+                                                      <option value="">SharePoint</option>
+                                                      <option value="">Word</option>
+                                                    </optgroup><optgroup label="Maintenance">
+                                                      <option value="">Backup and recovery</option>
+                                                      <option value="">Tech support</option>
+                                                      <option value="">Troubleshooting</option>
+                                                    </optgroup><optgroup label="Networks">
+                                                      <option value="">Cloud management</option>
+                                                      <option value="">Network configuration</option>
+                                                      <option value="">Security systems</option>
+                                                      <option value="">WAN/LAN</option></optgroup>
+                                                      <optgroup label="Operating Systems">
+                                                        <option value="">Linux</option>
+                                                        <option value="">MacOS</option>
+                                                        <option value="">Microsoft Windows</option>
+                                                      </optgroup><optgroup label="Social Media">
+                                                        <option value="">Facebook</option>
+                                                        <option value="">Hootsuite</option>
+                                                        <option value="">Instagram</option>
+                                                        <option value="">LinkedIn</option>
+                                                        <option value="">Pinterest</option>
+                                                        <option value="">Twitter</option>
+                                                        <option value="">YouTube</option></optgroup>
+                                                        <optgroup label="Web Browsers">
+                                                          <option value="">Chrome</option>
+                                                          <option value="">Firefox</option>
+                                                          <option value="">Internet Explorer</option>
+                                                          <option value="">Safari</option>
+                                                        </optgroup><optgroup label="Web Development and Programming">
+                                                          <option value="">Django</option>
+                                                          <option value="">Java</option>
+                                                          <option value="">Javascript</option>
+                                                          <option value="">Ruby on rails</option>
+                                                          <option value="">Swift</option>
+                                                          <option value="">Perl</option>
+                                                          <option value="">PHP</option>
+                                                          <option value="">Python</option>
+                                                          <option value="">XML</option>
+                                                        </optgroup></select>
+
+
+
+                                            <select class="mdb-select md-form" searchable="Search here.." name="Skill Level Preferred">
+                                              <option value="" disabled selected>Choose a level</option>
+                                              <option value="12">Beginner</option>
+                                              <option value="13">Some experience</option>
+                                              <option value="14">Advanced</option></select>
+
+                                              <br/>
+
+
+  <br>  <br>
+
+                    <h2
+                        class="text-center text-info" style="filter: grayscale(100%) sepia(100%);">When do you need an assistant?</h2>
+                        <p class="text-center">Select your timeframe to let students know when you want work started. You can skip this step if you aren't sure and complete it later.</p>
+                        <div class="form-group" style="margin-bottom: 40px;"><label for="name"><strong>Availability</strong></label><select class="form-control" style="margin-bottom: 0px;"><option value="12">Immediately</option><option value="13">1 week</option><option value="14">2 weeks</option><option value="">3 weeks</option><option value="">1 month</option><option value="">1+ months</option></select></div>
+                        <h2
+                            class="text-center text-info" style="filter: grayscale(100%) sepia(100%);">List a job</h2>
+                            <p class="text-center">When listing a job, make sure to include a title, a projected hourly rate, and a general description that includes what computer programs will be used. You can add more jobs later.</p>
+                            <div class="form-group" style="margin-bottom: 3px;"><label for="name"><strong>Title</strong></label><input class="form-control" type="text" style="margin-bottom: -15px;"></div>
+                            <div class="form-group" style="margin-bottom: 3px;"><label for="name" style="margin-top: 25px;"><strong>Hourly Rate</strong></label>
+                              <select class="form-control" style="margin-bottom: -15px;">
+                                <option value="" disabled selected>N/A</option>
+                                <option value="12">$10-$12/hr</option>
+                                <option value="13">$12-$15/hr</option>
+                                <option value="14">$15-$20/hr</option>
+                                <option value="">$20-$25/hr</option><option value="">$25+/hr</option></select></div>
+                            <div
+                                class="form-group" style="margin-bottom: 0px;"><label for="name" style="margin-top: 25px;"><strong>Description</strong></label><textarea class="form-control" style="margin-bottom: 40px;"></textarea></div>
+                                <h2 class="text-center text-info" style="filter: grayscale(100%) sepia(100%);">Give more detail</h2>
+                                <p class="text-center">Write a brief bio and upload supporting documents to help students get to know you.</p>
+                                <div class="form-group"><label for="name"><strong>Biography</strong></label><textarea class="form-control"></textarea></div>
+                                <div class="form-group"><label for="password"><strong>Documents (resume, CV, sample work, etc.)</strong></label>  <br />
+                                <input type="file"><input type="file" style="margin-top: 15px;">
+
+                                <input type="file" style="margin-top: 15px;"></div>
+
+                                <br />
+                                <a class="btn btn-primary btn-block border-white" role="button"
+                                style="background-color: rgb(241,158,101);padding: 12px 24px;" href="#">Create Profile</a>
+
+
+                                  </form>
+                                </div>
+    </section>
+    <footer class="page-footer dark" style="background-color: rgb(241,158,101);width: auto;margin-top: 0px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3">
+                    <h5>Get started</h5>
+                    <ul class="border-white float-left" style="filter: saturate(125%);">
+                        <li class="text-white border-white"><a href="../home.html">Home</a></li>
+                        <li><a href="../student-or-employer.html">Sign up</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3">
+                    <h5>About us</h5>
+                    <ul>
+                        <li><a href="../why-intern.html">Company Information</a></li>
+                        <li><a href="../contact-us.html">Contact us</a></li>
+                        <li><a href="#">Reviews</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3 text-white">
+                    <h5>Support</h5>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3">
+                    <h5>Legal</h5>
+                    <ul>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Terms of Use</a></li>
+                        <li class="text-primary"><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <p>© 2020 Copyright Text</p>
+        </div>
+    </footer>
+    <nav class="navbar navbar-light navbar-expand-lg fixed-top bg-white shadow clean-navbar">
+        <div class="container"><a class="navbar-brand logo" href="home.html" style="font-family: Montserrat, sans-serif;">INtern</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div
+                class="collapse navbar-collapse" id="navcol-1"><input class="border rounded mr-auto" type="search" placeholder="search" autocomplete="on">
+                <ul class="nav navbar-nav ml-auto">
+                  <li class="nav-item" role="presentation"><a class="nav-link" href="{% url 'home' %}" style="font-size: 12.8px;font-weight: 600;font-style: normal;font-family: Montserrat, sans-serif;color: rgba(0, 0, 0, 0.7);">Home</a></li>
+                  <li class="nav-item" role="presentation"><a class="nav-link" href="{% url 'why' %}" style="font-size: 12.8px;font-weight: 600;font-style: normal;font-family: Montserrat, sans-serif;color: rgba(0, 0, 0, 0.7);">Why Intern?</a></li>
+                  <li class="nav-item" role="presentation"><a class="nav-link" href="{% url 'contact' %}" style="font-size: 12.8px;font-weight: 600;font-style: normal;font-family: Montserrat, sans-serif;color: rgba(0, 0, 0, 0.7);">COntact us</a></li>
+                  <li class="nav-item" role="presentation"><a class="nav-link" href="{% url 'log-in' %}" style="font-size: 12.8px;font-weight: 600;font-style: normal;font-family: Montserrat, sans-serif;color: rgba(0, 0, 0, 0.7);">Log In</a></li>
+        </div>
+        </div>
+    </nav>
+
+
+
+
+
+
+
+    <script src="{% static 'assets/js/jquery.min.js' %}"></script>
+    <script src="{% static 'assets/bootstrap/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'assets/js/smart-forms.min.js' %}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js"></script>
+    <script src="{% static 'assets/js/smoothproducts.min.js' %}"></script>
+    <script src="{% static 'assets/js/theme.js' %}"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
+
+
+</html>

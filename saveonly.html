@@ -1,0 +1,29 @@
+
+in student.html: the continue button
+
+
+<form class="border-white" style="width: 600px;height: 200[x;margin-right: auto;margin-left: auto;">
+
+  <input class ="btn btn-primary btn-block border-white" role="button"
+  style="background-color: rgb(241,158,101);padding: 12px 24px;" type="submit" value="Continue" />
+
+  <a class="btn btn-primary btn-block border-white" role="button"
+  style="background-color: rgb(241,158,101);padding: 12px 24px;" href="{% url 'student_moreinfo' %}">Continue</a>
+</form>
+
+
+
+
+
+log-in.html
+
+<!-- <a class="btn btn-primary btn-block btn-lg border-white" role="button" href="{% url 's_profile' %}" style="background-color: rgb(241,158,101);margin-bottom: 20px;font-size: 16px;">Log In</a> -->
+
+student_moreinfo
+
+<a class="btn btn-primary btn-block border-white" role="button"
+style="background-color: rgb(241,158,101);padding: 12px 24px;" href="{% url 's_profile' %}">Create Profile</a>
+
+biography
+
+<div class="form-group"><label for="Biography"><strong>Biography:</strong></label><textarea class="form-control"></textarea></div>

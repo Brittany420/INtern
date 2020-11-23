@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+{% load static %}
+<html style="width: auto;">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>INtern</title>
+    <link rel="stylesheet" href="{% static 'assets/bootstrap/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i,600,600i">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora">
+    <link rel="stylesheet" href="{% static 'assets/fonts/fontawesome-all.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/fonts/ionicons.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/fonts/simple-line-icons.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/fonts/typicons.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/Article-Dual-Column.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css">
+    <link rel="stylesheet" href="{% static 'assets/css/Navigation-Clean.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/Navigation-with-Search.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/Projects-Clean.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/smoothproducts.css' %}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+
+</head>
+
+
+<form method='POST' action="{% url 'student' %}">
+
+{% csrf_token %}
+
+
+<body style="width: auto;">
+    <section class="clean-block clean-form dark" style="width: auto;height: 650px;">
+        <div class="container" style="width: 985px;">
+            <div class="block-heading" style="width: auto;">
+                <h2 class="text-info" style="filter: grayscale(100%) sepia(100%);margin-top: 92px;width: 966px;">Are you a student or employer?</h2>
+            </div>
+        </div>
+        <div class="container">
+
+        <form class="border-white" style="width: 20px;height: 200[x;margin-right: auto;margin-left: auto;">
+          <a class="btn btn-primary btn-block border-white" role="button"
+          style="background-color: rgb(241,158,101);padding: 12px 24px;" href="{% url 'student' %}">Student</a>
+
+          <a class="btn btn-primary btn-block border-white" role="button"
+          style="background-color: rgb(241,158,101);padding: 12px 24px;" href="{% url 'employer' %}">Employer</a>
+        </form>
+
+      </div>
+
+    </section>
+
+
+
+
+    <footer class="page-footer dark" style="background-color: rgb(241,158,101);width: auto;margin-top: 0px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3">
+                    <h5>Get started</h5>
+                    <ul class="border-white float-left" style="filter: saturate(125%);">
+                        <li class="text-white border-white"><a href="{% url 'home' %}">Home</a></li>
+                        <li><a href="{% url 'signup' %}">Sign up</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3">
+                    <h5>About us</h5>
+                    <ul>
+                        <li><a href="{% url 'why' %}">Company Information</a></li>
+                        <li><a href="{% url 'contact' %}">Contact us</a></li>
+                        <li><a href="#">Reviews</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3 text-white">
+                    <h5>Support</h5>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3">
+                    <h5>Legal</h5>
+                    <ul>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Terms of Use</a></li>
+                        <li class="text-primary"><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <p>© 2020 Copyright Text</p>
+        </div>
+    </footer>
+    <nav class="navbar navbar-light navbar-expand-lg fixed-top bg-white shadow clean-navbar" style="width: auto;">
+        <div class="container"><a class="navbar-brand logo" href="home.html">INtern</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse"
+                id="navcol-1">
+                <ul class="nav navbar-nav ml-auto">
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="{% url 'home' %}" style="font-size: 12.8px;font-weight: 600;font-style: normal;font-family: Montserrat, sans-serif;color: rgba(0, 0, 0, 0.7);">Home</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="{% url 'why' %}" style="font-size: 12.8px;font-weight: 600;font-style: normal;font-family: Montserrat, sans-serif;color: rgba(0, 0, 0, 0.7);">Why intern?</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="{% url 'contact' %}" style="font-size: 12.8px;font-weight: 600;font-style: normal;font-family: Montserrat, sans-serif;color: rgba(0, 0, 0, 0.7);">Contact Us</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="{% url 'log-in' %}" style="font-size: 12.8px;font-weight: 600;font-style: normal;font-family: Montserrat, sans-serif;color: rgba(0, 0, 0, 0.7);">Log In</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <script src="{% static 'assets/js/jquery.min.js' %}"></script>
+    <script src="{% static 'assets/bootstrap/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'assets/js/smart-forms.min.js' %}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js"></script>
+    <script src="{% static 'assets/js/smoothproducts.min.js' %}"></script>
+    <script src="{% static 'assets/js/theme.js' %}"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
+
+</html>
